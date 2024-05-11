@@ -1,0 +1,20 @@
+.header{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-content: center;
+    background-color: $primary_color;
+    &_nav{
+        display: flex;
+    }
+
+    & li {
+        margin-right: 10px;
+        &:hover{
+            @include bordered(white)
+        }
+    }
+
+    &_icon{
+        justify-self: center;
+    }
+}

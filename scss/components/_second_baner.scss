@@ -1,0 +1,26 @@
+.image_box{
+    max-width: 100%;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    & div{
+        width: 200px;
+        height: 300px;
+    }
+    @each $nature in a1,a2,a3,a4,a5 {
+        .#{$nature}-box {
+            background-image: url("../../img/#{$nature}.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+    @each $nature in a6 {
+        .#{$nature}-box {
+            background-image: url("../../img/#{$nature}.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
+
+}

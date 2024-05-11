@@ -1,0 +1,10 @@
+.footer{
+    background-color: $main_text_color;
+    font-family: $main_font_family;
+    .footer_btn{
+        @extend .btn;
+        background-color: $accent_color;
+        margin-top: 50px;
+        margin-left: 40vw;
+    }
+}

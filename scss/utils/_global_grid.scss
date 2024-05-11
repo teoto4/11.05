@@ -1,0 +1,6 @@
+body{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(100px, auto) minmax(600px, 5fr) minmax(50px, auto);
+}
